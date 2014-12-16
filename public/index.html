@@ -7,11 +7,9 @@
     <meta name="author" content="">
     <title>GenEncore | Your Mobile & Web Solutions Partner</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -37,12 +35,11 @@
               </button>
               <a class="navbar-brand" href="index.html"></a>
             </div>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse right dd_nav">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li>
                 <li><a href="#whyUs">Why GenEncore</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#skills">Services</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
               </ul>
@@ -61,8 +58,8 @@
               <div class="contact_info">
                 <div class="all_contact">
                   <div class="contact_wrap">
-                    <div class="icon-phone"> 281 257-0440&nbsp&nbsp</div>
-                    <div class="icon-envelope"> info@genencore.com</div>
+                    <i class="fa fa-phone-square contact_no"> 281 257-0440</i><br>
+                    <i class="fa fa-envelope"> info@genencore.com</i>
                   </div>
                 </div>
               </div>
@@ -78,8 +75,8 @@
           </div>
         </div> --><!--/.item-->
       </div><!--/.carousel-inner-->
-      <a class="prev" href="#main-slider" data-slide="prev"><i class="icon-angle-left"></i></a>
-      <a class="next" href="#main-slider" data-slide="next"><i class="icon-angle-right"></i></a>
+      <a class="prev" href="#main-slider" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+      <a class="next" href="#main-slider" data-slide="next"><i class="fa fa-chevron-right"></i></a>
     </section><!--/#main-slider-->
 
     <section id="whyUs">
@@ -140,198 +137,67 @@
     </section><!--/#services-->
 
     <section id="portfolio">
-        <div class="container">
-            <div class="box">
-                <div class="center gap">
-                    <h2>Portfolio</h2>
-                </div><!--/.center-->
-                <div id="img-sprite">
-                <img src="../images/pf1.png" id="portfolio">
-                    <div data-toggle="modal" data-target="#myModal1" id="sprite-1"></div>
-                    <div data-toggle="modal" data-target="#myModal2" id="sprite-2"></div>
-                    <div data-toggle="modal" data-target="#myModal3" id="sprite-3"></div>
-                    <div data-toggle="modal" data-target="#myModal4" id="sprite-4"></div>
-                    <div data-toggle="modal" data-target="#myModal5" id="sprite-5"></div>
-                </div>
-            </div><br>
-            <div class="modal fade modal-class" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1Label" aria-hidden="true">
-                <div class="row modal-content">
-                    <div  class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h2>Oakley Surf Report</h2>
-                    </div>
-                    <div class="modal-body">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="pf_slide">
-                                <div><img src="../images/pf2.jpg"></div>
-                                <div><img src="../images/pf3.jpg"></div>
-                                <div><img src="../images/pf4.jpg"></div>
-                                <div><img src="../images/pf5.jpg"></div>
-                                <div><img src="../images/pf6.jpg"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="col-lg-7 text-left">
-                                As makers of high performance gear for demanding athlets, Oakley is major presence in the surfing community. This Sufr Report app delivers real-time surfing condition from Surfline.com for all parts of the US and selected other countries.<br>
-                                We worked Oakley to relaunch the app with fresh updates for iOS7. We also married a new interface with Surfline's backend feeds to keep forecast and reports at surfers' fingertips.
-                                <h4><b>App Name</b><br>Surf Report</h4>
-                                <h4><b>Client</b><br>Oakley</h4>
-                                <h4><b>Platform</b><br>iphone</h4><br>
-                                <div class="col-lg-6 apple_download">
-                                    <img src="../images/apple.png">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-3">
-                                <img src="../images/oakley.png" id="oakley">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="box">
+          <div class="center">
+              <h2>Portfolio</h2>
+          </div><!--/.center-->
+          <div id="img-sprite" class="portfolio_wrap">
+            <img class="port_image" src="../images/pf1.jpg" data-toggle="modal" data-target="#myModal">
+            <img class="port_image" src="../images/pf2.jpg">
+            <img class="port_image" src="../images/pf3.jpg">
+            <img class="port_image" src="../images/pf4.jpg">
+            <img class="port_image" src="../images/pf5.jpg">
+          </div>
+          <div class="gap"></div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
-            <div class="modal fade modal-class" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2Label" aria-hidden="true">
-                <div class="row modal-content">
-                    <div  class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h2>UNC</h2>
-                    </div>
-                    <div class="modal-body">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="pf_slide">
-                                <div><img src="../images/pf2.jpg"></div>
-                                <div><img src="../images/pf3.jpg"></div>
-                                <div><img src="../images/pf4.jpg"></div>
-                                <div><img src="../images/pf5.jpg"></div>
-                                <div><img src="../images/pf6.jpg"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="col-lg-7 text-left">
-                                As makers of high performance gear for demanding athlets, Oakley is major presence in the surfing community. This Sufr Report app delivers real-time surfing condition from Surfline.com for all parts of the US and selected other countries.<br>
-                                We worked Oakley to relaunch the app with fresh updates for iOS7. We also married a new interface with Surfline's backend feeds to keep forecast and reports at surfers' fingertips.
-                                <h4><b>App Name</b><br>Surf Report</h4>
-                                <h4><b>Client</b><br>Oakley</h4>
-                                <h4><b>Platform</b><br>iphone</h4><br>
-                                <div class="col-lg-6 apple_download">
-                                    <img src="../images/apple.png">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-3">
-                                <img src="../images/oakley.png" id="oakley">
-                            </div>
-                        </div>
-                    </div>
+            <div class="modal-body">
+              <div class="modal_content_slide">
+                <div>
+                  <img src="../images/pf1.jpg" class="col-lg-8">
+                  <div class="col-lg-4">
+                    <h2>Lorem Ipsum</h2>
+                    <h6>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                  </div>
                 </div>
+                <div>
+                  <img src="../images/pf2.jpg" class="col-lg-8">
+                  <div class="col-lg-4">
+                    <h2>Lorem Ipsum</h2>
+                    <h6>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                  </div>
+                </div>
+                <div>
+                  <img src="../images/pf3.jpg" class="col-lg-8">
+                  <div class="col-lg-4">
+                    <h2>Lorem Ipsum</h2>
+                    <h6>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="modal fade modal-class" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModal3Label" aria-hidden="true">
-                <div class="row modal-content">
-                    <div  class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h2>Soap Box</h2>
-                    </div>
-                    <div class="modal-body">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="pf_slide">
-                                <div><img src="../images/pf2.jpg"></div>
-                                <div><img src="../images/pf3.jpg"></div>
-                                <div><img src="../images/pf4.jpg"></div>
-                                <div><img src="../images/pf5.jpg"></div>
-                                <div><img src="../images/pf6.jpg"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="col-lg-7 text-left">
-                                As makers of high performance gear for demanding athlets, Oakley is major presence in the surfing community. This Sufr Report app delivers real-time surfing condition from Surfline.com for all parts of the US and selected other countries.<br>
-                                We worked Oakley to relaunch the app with fresh updates for iOS7. We also married a new interface with Surfline's backend feeds to keep forecast and reports at surfers' fingertips.
-                                <h4><b>App Name</b><br>Surf Report</h4>
-                                <h4><b>Client</b><br>Oakley</h4>
-                                <h4><b>Platform</b><br>iphone</h4><br>
-                                <div class="col-lg-6 apple_download">
-                                    <img src="../images/apple.png">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-3">
-                                <img src="../images/oakley.png" id="oakley">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-class" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModal4Label" aria-hidden="true">
-                <div class="row modal-content">
-                    <div  class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h2>Disney Publishing</h2>
-                    </div>
-                    <div class="modal-body">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="pf_slide">
-                                <div><img src="../images/pf2.jpg"></div>
-                                <div><img src="../images/pf3.jpg"></div>
-                                <div><img src="../images/pf4.jpg"></div>
-                                <div><img src="../images/pf5.jpg"></div>
-                                <div><img src="../images/pf6.jpg"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="col-lg-7 text-left">
-                                As makers of high performance gear for demanding athlets, Oakley is major presence in the surfing community. This Sufr Report app delivers real-time surfing condition from Surfline.com for all parts of the US and selected other countries.<br>
-                                We worked Oakley to relaunch the app with fresh updates for iOS7. We also married a new interface with Surfline's backend feeds to keep forecast and reports at surfers' fingertips.
-                                <h4><b>App Name</b><br>Surf Report</h4>
-                                <h4><b>Client</b><br>Oakley</h4>
-                                <h4><b>Platform</b><br>iphone</h4><br>
-                                <div class="col-lg-6 apple_download">
-                                    <img src="../images/apple.png">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-3">
-                                <img src="../images/oakley.png" id="oakley">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade modal-class" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModal5Label" aria-hidden="true">
-                <div class="row modal-content">
-                    <div  class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h2>Small Planet</h2>
-                    </div>
-                    <div class="modal-body">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="pf_slide">
-                                <div><img src="../images/pf2.jpg"></div>
-                                <div><img src="../images/pf3.jpg"></div>
-                                <div><img src="../images/pf4.jpg"></div>
-                                <div><img src="../images/pf5.jpg"></div>
-                                <div><img src="../images/pf6.jpg"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="col-lg-7 text-left">
-                                As makers of high performance gear for demanding athlets, Oakley is major presence in the surfing community. This Sufr Report app delivers real-time surfing condition from Surfline.com for all parts of the US and selected other countries.<br>
-                                We worked Oakley to relaunch the app with fresh updates for iOS7. We also married a new interface with Surfline's backend feeds to keep forecast and reports at surfers' fingertips.
-                                <h4><b>App Name</b><br>Surf Report</h4>
-                                <h4><b>Client</b><br>Oakley</h4>
-                                <h4><b>Platform</b><br>iphone</h4><br>
-                                <div class="col-lg-6 apple_download">
-                                    <img src="../images/apple.png">
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-3">
-                                <img src="../images/oakley.png" id="oakley">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.box-->
-        </div><!--/.container-->
-    </section><!--/#portfolio-->
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="skills">
         <div class="container">
             <div class="box">
                 <div class="center">
-                    <h2>SKILLS</h2><br><br>
+                    <h2>SERVICES & SKILLS</h2><br><br>
                     <div class="row">
                         <div class="col-sm-1 star_wrap">
                             <img src="../images/green-bullet-large.png">
@@ -569,15 +435,24 @@
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $(document).ready(function(){
-              $('.pf_slide').slick({
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  autoplay: true,
-                  autoplaySpeed: 2000,
-                  arrows: true,
-                });
-        });
+      $(document).ready(function(){
+        $('.pf_slide').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+          });
+        $('.modal_content_slide').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+          });
+        $(".slick-prev").addClass('fa fa-chevron-left');
+        $(".slick-next").addClass('fa fa-chevron-right');
+      });
     </script>
 </body>
 </html>

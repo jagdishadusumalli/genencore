@@ -39,6 +39,9 @@ a:focus {
   text-decoration: none;
   outline: none;
 }
+.right{
+  float: right;
+}
 #header {
   position: fixed;
   top: 0;
@@ -123,18 +126,24 @@ a:focus {
 .contact_wrap{
   background: rgba(12, 11, 11, 0.5);
   margin: 0 auto;
-  display: inline-block;
-  border-radius: 25px;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  padding: 1.2rem 0;
+}
+.contact_wrap i{
+  font-size: 1.8rem;
 }
 .all_contact{
-  background: rgba(14, 12, 12, 0.41);
   padding: 10px;
-  width: auto;
+  width: 25rem;
   display: inline-block;
 }
 .contact_wrap .tel, .contact_wrap .email{
   float: left;
   padding: 5px 15px;
+}
+.contact_no{
+  margin-bottom: 1rem;
 }
 .contact_info{
   position: relative;
@@ -143,7 +152,7 @@ a:focus {
   color:white;
 }
 /*why us*/
-.agile_img_wrap img, .slick-slide img, img#portfolio, img#oakley{
+.agile_img_wrap img{
   width:100%;
 }
 div.col-lg-6.agile_img_wrap img{
@@ -228,6 +237,7 @@ div.col-lg-6.agile_img_wrap img{
 }
 #portfolio .box {
   background: #f3f3f3;
+  display: inline-block;
 }
 .portfolio-items,
 .portfolio-filter {
@@ -308,6 +318,44 @@ div.col-lg-6.agile_img_wrap img{
 }
 .portfolio-item:hover .overlay {
   opacity: 1;
+}
+
+/*new portfolio*/
+.modal{
+  top: 56px;
+}
+.modal-dialog{
+  width: 1024px;
+}
+.modal-content{
+  height: 560px
+}
+.portfolio_wrap{
+  width: 100%;
+}
+.port_image{
+  width: 32.5%;
+  float: left;
+  padding: 0.5rem;
+  background: white;
+  cursor: pointer;
+  margin: 0 2px;
+}
+.modal-content .slick-prev, .modal-content .slick-next{
+  color: transparent;
+  position: absolute;
+  top: 45%;
+  width: 3rem;
+  padding: 1.3rem 1.3rem 1.3rem 1rem;
+  background: rgba(0,0,0,0.4);
+  border-radius: 4px;
+  border: none;
+}
+.modal-content .slick-next{
+  right: 0;
+}
+.modal-content .slick-prev:before, .modal-content .slick-next:before{
+  color: black;
 }
 
 #about-us .box {
@@ -514,6 +562,18 @@ div.col-lg-6.agile_img_wrap img{
 .icon-social:hover {
   color: #fff;
 }
+.dd_nav{
+  width: 78%;
+}
+.dd_nav ul{
+  width: 100%;
+}
+.dd_nav li{
+  width: 19%;
+}
+.dd_nav li a{
+  text-align: center;
+}
 .navbar-default {
   background: #fff;
   border-radius: 0 0 5px 5px;
@@ -528,7 +588,7 @@ div.col-lg-6.agile_img_wrap img{
   border-radius: 0 0 0 5px;
 }
 .navbar-default .navbar-brand {
-  margin-right: 50px;
+  border-right: 2px solid #E7E4E4;
   margin-left: 20px;
   width: 200px;
   height: 78px;
@@ -538,7 +598,7 @@ div.col-lg-6.agile_img_wrap img{
   margin-left: 1px;
 }
 .navbar-default .navbar-nav > li > a {
-  padding: 30px 25px;
+  padding: 30px 0;
   font-size: 16px;
   line-height: 18px;
   color: #999;
@@ -698,6 +758,9 @@ textarea#message {
 }
 
 /* Modal class*/
+.modal-header{
+  border-bottom: 0;
+}
 .modal-class{
   position: fixed;
   top: 20%;
@@ -715,7 +778,7 @@ textarea#message {
 }
 
 .modal-content .modal-body{
-  max-height: 400px;
+  height: 85%;
   overflow-y:auto;
 }
 
@@ -724,7 +787,7 @@ textarea#message {
 }
 
 
-#img-sprite{
+/*#img-sprite{
   position:relative;
   width:100%;
 }
@@ -734,9 +797,9 @@ textarea#message {
   margin:0px;
   padding:0px;
   cursor:pointer;
-}
+}*/
 
-#img-sprite #sprite-1{
+/*#img-sprite #sprite-1{
   top:0px;
   left:0px;
   height:100%;
@@ -769,4 +832,4 @@ textarea#message {
   left:74.8%;
   height:49.261%;
   width:25.100%;
-}
+}*/
