@@ -7,7 +7,6 @@
     <meta name="author" content="">
     <title>GenEncore | Your Mobile & Web Solutions Partner</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/slick.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
@@ -16,10 +15,10 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+   <!--  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"> -->
 </head><!--/head-->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
@@ -37,6 +36,7 @@
             </div>
             <div class="collapse navbar-collapse right dd_nav">
               <ul class="nav navbar-nav">
+                <li style="width:0;"><a href="#main-slider"></a></li>
                 <li><a href="#whyUs">Why GenEncore</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#skills">Services</a></li>
@@ -84,7 +84,7 @@
         <div class="box">
           <div class="center">
       			<h2>Why Us?</h2><br>
-      			<div class="col-lg-6 col-md-6 v_separator clear">
+      			<div class="col-lg-6 col-md-6 clear">
       				<h4 class="text-left bold">Our aim is to delight the customer!</h4>
       				<br>
       				
@@ -142,12 +142,27 @@
           <div class="center">
               <h2>Portfolio</h2>
           </div><!--/.center-->
-          <div id="img-sprite" class="portfolio_wrap">
-            <img class="port_image" src="../images/pf1.jpg" data-toggle="modal" data-target="#myModal">
-            <img class="port_image" src="../images/pf2.jpg">
-            <img class="port_image" src="../images/pf3.jpg">
-            <img class="port_image" src="../images/pf4.jpg">
-            <img class="port_image" src="../images/pf5.jpg">
+          <div id="img-sprite" class="portfolio_wrap row">
+            <div class="port_image col-lg-6 col-md-6 col-sm-12 col-xs-12" data-toggle="modal" data-target="#myModal">
+              <div class="site_name">Yowoto</div>
+              <img src="../images/yowoto.jpg">
+            </div>
+            <div class="port_image col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="site_name">Group BPM</div>
+              <img src="../images/bpm.jpg">
+            </div>
+            <div class="port_image col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="site_name">Sodexo</div>
+              <img src="../images/sodexo.jpg">
+            </div>
+            <div class="port_image col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="site_name">IETS</div>
+              <img src="../images/iets.jpg">
+            </div>
+            <div class="port_image col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="site_name">CM</div>
+              <img src="../images/cm.jpg">
+            </div>
           </div>
           <div class="gap"></div>
         </div>
@@ -161,31 +176,77 @@
               <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
-              <div class="modal_content_slide">
-                <div>
-                  <img src="../images/pf1.jpg" class="col-lg-8">
-                  <div class="col-lg-4">
-                    <h2>Lorem Ipsum</h2>
-                    <h6>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+              <div class="">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <div class="row">
+                          <div class="col-lg-8">
+                            <img src="../images/yowoto.jpg" class="site_img">
+                            <div class="row">
+                              <div class="">Technology stack</div><br>
+                              <img src="/images/ruby.png" class="col-lg-2">
+                              <img src="/images/rails.png" class="col-lg-2">
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div><a href="http://www.yowoto.com" class="site_url">www.yowoto.com</a></div>
+                            <h6 class="site_desc">
+                            yowoto is a customisable platform. It helps parents, families and friends to come together and interact with people outside their immediate circle. Why? To raise happy and well-adjusted kids in today's dynamic and demanding environment.</h6>
+                          </div>
+                        </div>  
+                      </div>
+                      <div class="item">
+                        <div class="row">
+                          <div class="col-lg-8">
+                            <img src="../images/sodexo.jpg" class="site_img">
+                          </div>
+                          <div class="col-lg-4">
+                            <div><a href="" class="site_url">www.sodexo.com</a></div>
+                            <h6 class="site_desc">
+                            This application is a Consumer Feedback Application. It was developed for a large MNC who is a worldwide leader in "Quality of Life services" and has presence in over 80 countries across the globe.
+                            <p>
+                            Since the client is primarily a service based industry, getting the right feedback and taking appropriate corrective measures is one of the key goals and to address this issue they were eager to replace their existing mechanism of collecting feedback on paper with something more robust, easy to use and more importantly real-time so that measures if any can be taken with out loosing precious time.
+                            </p>
+                            <p>
+                              A web admin console was built to not only manage the data that is required by the mobile app to be able to effectively collect feedback but also serves as a MIS tool for the mngt by providing vital stats in both in form of charts and figures.
+                            </p>
+                          </h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row">
+                          <div class="col-lg-8">
+                            <img src="../images/bpm.jpg" class="site_img">
+                          </div>
+                          <div class="col-lg-4">
+                            <div><a href="#" class="site_url">BPM app</a></div>
+                            <h6 class="site_desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                      <span class="fa fa-chevron-left arrows" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                      <span class="fa fa-chevron-right arrows" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
                   </div>
-                </div>
-                <div>
-                  <img src="../images/pf2.jpg" class="col-lg-8">
-                  <div class="col-lg-4">
-                    <h2>Lorem Ipsum</h2>
-                    <h6>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
-                  </div>
-                </div>
-                <div>
-                  <img src="../images/pf3.jpg" class="col-lg-8">
-                  <div class="col-lg-4">
-                    <h2>Lorem Ipsum</h2>
-                    <h6>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h6>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -203,7 +264,14 @@
                             <img src="../images/green-bullet-large.png">
                         </div>
                         <div class="col-sm-11 text-left why_text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          <p class="bold">Web Development : </p>
+                          <p>
+                            We have extensive experience in building high quality web 2.0 applications using opensource technologies primarily Ruby On Rails (RoR). We have built many scalable web solutions for clients across the globe. From basic social integrations to big data business solutions and to building API’s for services we have done it all.
+                          </p>
+                          <p>
+                            Technologies and Tools we employ : Ruby on Rails, Postgres, Mysql, Linux, Ubuntu, Nginx, Apache Server, Monit.
+                          </p>
+
                         </div>
                     </div><br>
                     <div class="row">
@@ -211,7 +279,13 @@
                             <img src="../images/green-bullet-large.png">
                         </div>
                         <div class="col-sm-11 text-left why_text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          <p class="bold">Web Design :</p>
+                          <p>
+                            Semantic front end engineering is our strength. We have been building solutions which work seamlessly irrespective of device types and operating systems. Responsive web design is second nature to us
+                          </p>
+                          <p>
+                            Technologies and Tools we have employed : HTML, CSS, Javascript, Coffescript, HAML, SASS, SCSS, Yeoman, Grunt, Node.js, AngularJS, Bootstrap and Foundation frameworks
+                          </p>
                         </div>
                     </div><br>
                     <div class="row">
@@ -219,7 +293,14 @@
                             <img src="../images/green-bullet-large.png">
                         </div>
                         <div class="col-sm-11 text-left why_text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          <p class="bold">Mobile Apps Development :</p>
+                          <p>
+                            We believe some apps has to be living ON the device. <br>
+                            So we have the skills and good experience on building high performance cross platform native applications for Android and IOS Platforms
+                          </p>
+                            <p>
+                              Technologies and Tools we have employed : Phonegap, Cordova, Jquery Touch
+                            </p>
                         </div>
                     </div><br>
                     <div class="row">
@@ -227,15 +308,15 @@
                             <img src="../images/green-bullet-large.png">
                         </div>
                         <div class="col-sm-11 text-left why_text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </div>
-                    </div><br>
-                    <div class="row">
-                        <div class="col-sm-1 star_wrap skill_star">
-                            <img src="../images/green-bullet-large.png">
-                        </div>
-                        <div class="col-sm-11 text-left why_text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <p class="bold">Cloud Solutions :</p>
+                            <p>
+                              We say its a “Cloud Age”.<br>
+                              All that we built for our client have been deployed to various IAAS and PAAS platforms. From setting up simple web servers to auto load balanced application servers we have years of hands on experience on the cloud management services.<br>
+                              Whether its deploying a custom built application on technologies from ruby to php to java or deploying great open source solutions from alfresco to sugarcrm or wordpress installs we have taken many customers to cloud with great elan.
+                            </p>
+                            <p>
+                              AWS, Heroku, Engine Yard, Digital Ocean, Rackspace, Linode, Google Cloud Platform
+                            </p>
                         </div>
                     </div><br>
                 </div> 
@@ -279,54 +360,64 @@
                     <div class="carousel-inner">
                         <div class="item active">
                             <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team01.jpg" alt="" ></p>
-                                        <h3>Suresh Srinivasan<small class="designation bold">Co Founder & MD</small></h3>
-                                        <p>Management Guru</p>
+                                <div class="col-lg-4">
+                                  <div class="member">
+                                    <div class="member_container">
+                                      <img class="img-responsive img-thumbnail img-circle" src="images/team01.jpg" alt="" />
+                                      <p class="social_connect" style="display:none;">
+                                        <span class="social_connect_icons">
+                                          <a class="social_link" href="https://www.linkedin.com/in/sureshsrinivasanpmp">
+                                            <i class="fa fa-linkedin-square"></i>
+                                          </a>
+                                          <i class="fa fa-twitter-square"></i>
+                                          <i class="fa fa-facebook-square"></i>
+                                        </span>
+                                      </p>
                                     </div>
+                                    <h3>Suresh Srinivasan<small class="designation bold">Co Founder & MD</small></h3>
+                                    <p>Management Guru</p>
+                                  </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/woman.png" alt="" ></p>
-                                        <h3>Jaya Gupta<small class="designation bold">Co Founder & Operations Head</small></h3>
-                                        <p>Operations Guru</p>
+                                      <div class="member_container">
+                                        <img class="img-responsive img-thumbnail img-circle" src="images/woman.png" alt="" />
+                                        <p class="social_connect" style="display:none;">
+                                          <span class="social_connect_icons">
+                                            <i class="fa fa-linkedin-square"></i>
+                                            <i class="fa fa-twitter-square"></i>
+                                            <i class="fa fa-facebook-square"></i>
+                                          </span>
+                                        </p>
+                                      </div>
+                                      <h3>Jaya Gupta<small class="designation bold">Co Founder & Operations Head</small></h3>
+                                      <p>Operations Guru</p>
                                     </div>
                                 </div>        
                                 <div class="col-sm-4">
                                     <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team03.jpg" alt="" ></p>
+                                        <div class="member_container">
+                                        <img class="img-responsive img-thumbnail img-circle" src="images/team03.jpg" alt="" />
+                                        <p class="social_connect" style="display:none;">
+                                          <span class="social_connect_icons">
+                                            <a class="social_link" href="https://www.linkedin.com/in/srikanthvishwamitra">
+                                              <i class="fa fa-linkedin-square"></i>
+                                            </a>
+                                            <a class="social_link" href="https://twitter.com/svishwamitra">
+                                              <i class="fa fa-twitter-square"></i>
+                                            </a>
+                                            <a class="social_link" href="https://www.facebook.com/srikanth.vishwamitra?fref=ts&ref=br_tf">
+                                              <i class="fa fa-facebook-square"></i>
+                                            </a>
+                                          </span>
+                                        </p>
+                                      </div>
                                         <h3>Srikanth Vishwamitra<small class="designation bold">Co Founder & Technology Head</small></h3>
                                         <p>Has been crafting and managing web & mobile solutions for over 15 years...</p>
                                     </div>
                                 </div> 
                             </div>
                         </div>
-                        <!-- <div class="item">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team04.jpg" alt="" ></p>
-                                        <h3>ABC XYZ<small class="designation bold">Co-Founder</small></h3>
-                                        <p>lorum ipsum dotom</p>
-                                    </div>
-                                </div> 
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team01.jpg" alt="" ></p>
-                                        <h3>Suresh Srinivasan<small class="designation bold">Co Founder & Managing..</small></h3>
-                                        <p>Some nice blurb about Suresh....</p>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/team02.jpg" alt="" ></p>
-                                        <h3>R G<small class="designation bold">Co Founder & Operations Head<</small></h3>
-                                        <p>Operations Guru and blah blah...</p>
-                                    </div>
-                                </div>  
-                            </div>
-                        </div> -->
                     </div>
                     <a class="left-arrow" href="#team-scroller" data-slide="prev">
                         <i class="icon-angle-left icon-4x"></i>
@@ -343,11 +434,11 @@
         <div class="container">
             <div class="box last">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <h1>Contact Form</h1>
+                     <div class="col-sm-6">
+                        <h1 class="text-center contact_txt">Write to Us</h1>
                         <p>We are get ready to get going on your next project. Fill out the form below and let us know how we can be of service.</p>
                         <div class="status alert alert-success" style="display: none"></div>
-                        <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
+                        <form action="//forms.brace.io/info@genencore.com" class="contact-form" id="main-contact-form" >
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -378,21 +469,24 @@
                                         <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
+                                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
-                    </div><!--/.col-sm-6-->
+                    </div>
                     <div class="col-lg-6 ">
-                        <h1 >We are hiring!</h1>
+                        <h1 class="text-center contact_txt">We are hiring!</h1>
                         <div class="row text-left">
                             <p>
                                 Want to change the world one app at a time? Join our dynamic team of strategists, designers and developers.
-                                <h4 class="center"><a href="">VIEW OPEN POSITIONS</a></h4>
                             </p>
                         </div>
-                        <h1>Connect with us</h1>
+                        <div class="row footer_contact_wrap">
+                          <i class="fa fa-phone-square contact_no"> 281 257-0440</i><br>
+                          <i class="fa fa-envelope"> info@genencore.com</i>
+                        </div>
+                        <!-- <h1>Connect with us</h1>
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="social">
@@ -408,7 +502,7 @@
                                     <li><a href="#"><i class="icon-youtube icon-social"></i> Youtube</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                     </div><!--/.col-sm-6-->
                 </div><!--/.row-->
             </div><!--/.box-->
@@ -431,8 +525,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script>
       $(document).ready(function(){
@@ -443,15 +535,16 @@
             autoplaySpeed: 2000,
             arrows: true,
           });
-        $('.modal_content_slide').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows: true,
-          });
-        $(".slick-prev").addClass('fa fa-chevron-left');
-        $(".slick-next").addClass('fa fa-chevron-right');
+          $('.modal_content_slide').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              dots: true,
+              autoplay: true,
+              slidesToShow: 1,
+            });
+          $(".slick-prev").addClass('fa fa-chevron-left');
+          $(".slick-next").addClass('fa fa-chevron-right');
       });
     </script>
 </body>

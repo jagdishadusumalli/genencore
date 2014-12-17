@@ -19,6 +19,9 @@ a {
   -o-transition: 300ms;
   transition: 300ms;
 }
+button:focus{
+  outline: none;
+}
 .btn {
   font-weight: 300;
   border: 0;
@@ -128,10 +131,10 @@ a:focus {
   margin: 0 auto;
   margin-bottom: 0.5rem;
   border-radius: 6px;
-  padding: 1.2rem 0;
+  padding: 1.6rem 0;
 }
 .contact_wrap i{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .all_contact{
   padding: 10px;
@@ -143,7 +146,7 @@ a:focus {
   padding: 5px 15px;
 }
 .contact_no{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .contact_info{
   position: relative;
@@ -226,6 +229,7 @@ div.col-lg-6.agile_img_wrap img{
 }
 .box.last {
   border-radius: 0 0 5px 5px;
+  padding-top: 2.5rem;
 }
 .box h2 {
   padding: 10px 30px;
@@ -327,35 +331,100 @@ div.col-lg-6.agile_img_wrap img{
 .modal-dialog{
   width: 1024px;
 }
-.modal-content{
-  height: 560px
-}
 .portfolio_wrap{
   width: 100%;
 }
 .port_image{
-  width: 32.5%;
-  float: left;
-  padding: 0.5rem;
-  background: white;
   cursor: pointer;
-  margin: 0 2px;
+  padding: 15px 15px;
 }
-.modal-content .slick-prev, .modal-content .slick-next{
+.port_image img{
+  width: 100%;
+  border: 10px solid #989595;
+  border-radius: 7px;
+}
+.site_name{
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+.site_name:hover{
+  color: #52b6ec;
+}
+/*.modal-content .slick-prev, .modal-content .slick-next{
   color: transparent;
   position: absolute;
-  top: 45%;
+  top: 40%;
   width: 3rem;
   padding: 1.3rem 1.3rem 1.3rem 1rem;
   background: rgba(0,0,0,0.4);
   border-radius: 4px;
   border: none;
+}*/
+.col-lg-8 .site_img{
+  width: 100%;
+}
+.member_container{
+  position: relative;
+  height: 24rem;
+
+}
+.member_container:hover .social_connect{
+  display: block!important;
+}
+.social_connect{
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: white;
+  border-radius: 50%;
+  background: #52b6ec;
+}
+.social_connect_icons{
+  top: 42%;
+  position: relative;
+  color: white;
+  font-size: 3rem;
 }
 .modal-content .slick-next{
   right: 0;
 }
 .modal-content .slick-prev:before, .modal-content .slick-next:before{
   color: black;
+}
+.site_info{
+  overflow-y: auto;
+}
+.site_url{
+  font-size: 2rem;
+}
+.site_desc{
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.footer_contact_txt{
+  font-size: 3rem;
+}
+.social_link{
+  color:white;
+}
+.footer_contact_wrap{
+  padding: 3.5rem 4rem;
+  background: rgba(12, 11, 11, 0.5);
+  border-radius: 6px;
+  width: 29rem;
+  margin: 4rem auto;
+  color: white;
+}
+.footer_contact_wrap .fa-phone-square:before, .footer_contact_wrap .fa-envelope:before{
+  font-size: 3rem;
+}
+.contact_wrap .fa-phone-square:before, .contact_wrap .fa-envelope:before{
+  font-size: 2.4rem;
+}
+.contact_txt{
+  margin: 0 0 2rem;
 }
 
 #about-us .box {
@@ -562,8 +631,12 @@ div.col-lg-6.agile_img_wrap img{
 .icon-social:hover {
   color: #fff;
 }
+.navbar-header{
+  width: 20%;
+}
 .dd_nav{
-  width: 78%;
+  width: 80%;
+  /*padding: 0;*/
 }
 .dd_nav ul{
   width: 100%;
@@ -588,7 +661,7 @@ div.col-lg-6.agile_img_wrap img{
   border-radius: 0 0 0 5px;
 }
 .navbar-default .navbar-brand {
-  border-right: 2px solid #E7E4E4;
+  /*border-right: 16px solid #51B6EC;*/
   margin-left: 20px;
   width: 200px;
   height: 78px;
@@ -667,10 +740,6 @@ div.col-lg-6.agile_img_wrap img{
 }
 .big-gap {
   margin-bottom: 100px;
-}
-
-.img-thumbnail{
-  width: 75%;
 }
 
 #footer {
@@ -761,6 +830,11 @@ textarea#message {
 .modal-header{
   border-bottom: 0;
 }
+.modal-content{
+  height: 555px;
+  overflow-y: auto;
+  position: relative;
+}
 .modal-class{
   position: fixed;
   top: 20%;
@@ -770,6 +844,10 @@ textarea#message {
   overflow: auto;
   overflow-y:none !important;
 }
+.arrows{
+  top: 200px;
+  position: relative;
+}
 
 .modal-class .modal-content{
   width:100%;
@@ -778,58 +856,18 @@ textarea#message {
 }
 
 .modal-content .modal-body{
-  height: 85%;
   overflow-y:auto;
 }
 
 .modal-header h2{
   text-align: center;
 }
-
-
-/*#img-sprite{
-  position:relative;
-  width:100%;
+.modal_content_slide .site_img{
+  width: 100%;
 }
-
-#img-sprite div{
-  position:absolute;
-  margin:0px;
-  padding:0px;
-  cursor:pointer;
-}*/
-
-/*#img-sprite #sprite-1{
-  top:0px;
-  left:0px;
-  height:100%;
-  width:49.799%;
+.carousel-control.right, .carousel-control.left{
+  background: transparent;
 }
-
-#img-sprite #sprite-2{
-  top:0px;
-  left:49.799%;
-  height:49.261%;
-  width:24.766%;
+.carousel-indicators{
+  bottom: -10px;
 }
-
-#img-sprite #sprite-3{
-  top:0px;
-  left:74.8%;
-  height:49.261%;
-  width:25.100%;
-}
-
-#img-sprite #sprite-4{
-  top:49.127%;
-  left:49.799%;
-  height:49.261%;
-  width:24.766%;
-}
-
-#img-sprite #sprite-5{
-  top:49.127%;
-  left:74.8%;
-  height:49.261%;
-  width:25.100%;
-}*/
