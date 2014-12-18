@@ -126,6 +126,10 @@ a:focus {
   text-shadow: 0 3px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+.slide_img{
+  width: auto;
+  margin: 0 auto;
+}
 .contact_wrap{
   background: rgba(12, 11, 11, 0.5);
   margin: 0 auto;
@@ -360,13 +364,25 @@ div.col-lg-6.agile_img_wrap img{
   border-radius: 4px;
   border: none;
 }*/
+/*skill*/
+.skill_icon{
+  font-size: 4rem;
+  color:#52b6ec;
+}
+.tags{
+  padding: 0.4rem 0.9rem;
+  background: grey;
+  color: white;
+  border-radius: 3px;
+  margin-right: 1rem;
+}
+
 .col-lg-8 .site_img{
   width: 100%;
 }
 .member_container{
   position: relative;
   height: 24rem;
-
 }
 .member_container:hover .social_connect{
   display: block!important;
@@ -660,12 +676,14 @@ div.col-lg-6.agile_img_wrap img{
 .navbar-default .first a {
   border-radius: 0 0 0 5px;
 }
-.navbar-default .navbar-brand {
-  /*border-right: 16px solid #51B6EC;*/
-  margin-left: 20px;
-  width: 200px;
-  height: 78px;
-  background: url(../images/logo.png) no-repeat 0 50%;
+
+.navbar-brand .fa-check{
+  font-size: 3.6rem;
+  color: #52b6ec;
+}
+.navbar-brand .logo{
+  font-size: 2.5rem;
+  color: #52b6ec;
 }
 .navbar-default .navbar-nav > li {
   margin-left: 1px;
@@ -847,6 +865,12 @@ textarea#message {
 .arrows{
   top: 200px;
   position: relative;
+  background: rgba(0, 0, 0, 0.9);
+  height: 6rem;
+  width: 3rem;
+  line-height: 6rem;
+  border-radius: 8%;
+  text-align: center;
 }
 
 .modal-class .modal-content{
@@ -867,6 +891,10 @@ textarea#message {
 }
 .carousel-control.right, .carousel-control.left{
   background: transparent;
+  text-align: left;
+}
+.carousel-control.right{
+  text-align: right;
 }
 .carousel-indicators{
   bottom: -10px;
