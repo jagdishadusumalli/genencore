@@ -379,7 +379,6 @@ div.col-lg-6.agile_img_wrap img{
 }
 .member_container{
   position: relative;
-  height: 24rem;
 }
 .member_container:hover .social_connect{
   display: block!important;
@@ -659,10 +658,11 @@ div.col-lg-6.agile_img_wrap img{
 }
 .dd_nav li a{
   text-align: center;
+  color:white!important;
 }
 .navbar-default {
-  background: #fff;
-  border-radius: 0 0 5px 5px;
+  background: rgba(0, 0, 0, 0.71);
+  border-radius: 0 0 4px 4px;
   border: 0;
   padding: 0;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
