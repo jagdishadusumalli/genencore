@@ -124,7 +124,8 @@ a:focus {
 #main-slider h1 {
   font-size: 68px;
   text-shadow: 0 3px rgba(0, 0, 0, 0.1);
-  color: #fff;
+  color: #52b6ec;
+  font-weight: bold;
 }
 .slide_img{
   width: auto;
@@ -351,30 +352,26 @@ div.col-lg-6.agile_img_wrap img{
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
 }
-.site_name:hover{
+.site_name:hover,.fa-circle{
   color: #52b6ec;
 }
-/*.modal-content .slick-prev, .modal-content .slick-next{
-  color: transparent;
-  position: absolute;
-  top: 40%;
-  width: 3rem;
-  padding: 1.3rem 1.3rem 1.3rem 1rem;
-  background: rgba(0,0,0,0.4);
-  border-radius: 4px;
-  border: none;
-}*/
+
 /*skill*/
 .skill_icon{
   font-size: 4rem;
   color:#52b6ec;
 }
+.skill_circle{
+  padding-right: 1.6rem;
+}
 .tags{
+  float: left;
   padding: 0.4rem 0.9rem;
-  background: grey;
+  background: #666666;
   color: white;
   border-radius: 3px;
   margin-right: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .col-lg-8 .site_img{
