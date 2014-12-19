@@ -56,6 +56,9 @@ a:focus {
 .navbar-header{
   width: 20%;
 }
+.con_txt{
+  padding-left: 0.5rem;
+}
 #main-slider {
   background-image: url(../images/slider-bg.jpg);
   background-attachment: fixed;
@@ -392,6 +395,9 @@ div.col-lg-6.agile_img_wrap img{
 .member_container{
   position: relative;
 }
+.img-thumbnail{
+  width: 100%;
+}
 .member_container:hover .social_connect{
   display: block!important;
 }
@@ -577,34 +583,7 @@ div.col-lg-6.agile_img_wrap img{
 .carousel.scale .right-arrow {
   right: -10px;
 }
-.carousel.scale .active .row > div:nth-child(1) {
-  -webkit-animation: scaleUp 200ms linear 0 both;
-  -moz-animation: scaleUp 200ms linear 0 both;
-  -ms-animation: scaleUp 200ms linear 0 both;
-  -o-animation: scaleUp 200ms linear 0 both;
-  animation: scaleUp 200ms linear 0 both;
-}
-.carousel.scale .active .row > div:nth-child(2) {
-  -webkit-animation: scaleUp 200ms linear 100ms both;
-  -moz-animation: scaleUp 200ms linear 100ms both;
-  -ms-animation: scaleUp 200ms linear 100ms both;
-  -o-animation: scaleUp 200ms linear 100ms both;
-  animation: scaleUp 200ms linear 100ms both;
-}
-.carousel.scale .active .row > div:nth-child(3) {
-  -webkit-animation: scaleUp 200ms linear 200ms both;
-  -moz-animation: scaleUp 200ms linear 200ms both;
-  -ms-animation: scaleUp 200ms linear 200ms both;
-  -o-animation: scaleUp 200ms linear 200ms both;
-  animation: scaleUp 200ms linear 200ms both;
-}
-.carousel.scale .active .row > div:nth-child(4) {
-  -webkit-animation: scaleUp 200ms linear 400ms both;
-  -moz-animation: scaleUp 200ms linear 400ms both;
-  -ms-animation: scaleUp 200ms linear 400ms both;
-  -o-animation: scaleUp 200ms linear 400ms both;
-  animation: scaleUp 200ms linear 400ms both;
-}
+
 .icon-social {
   border: 0;
   color: #fff;
@@ -936,4 +915,26 @@ textarea#message {
   .dd_nav{
     margin-bottom: 2rem;
   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .container{
+    max-width: 100%;
+  }
+  .navbar-header{
+    width: 29%;
+  }
+  .dd_nav{
+    width: 71%;
+  }
+  .navbar-default .navbar-nav > li > a{
+    font-size: 13px;
+  }
+  .navbar-brand .fa-check{
+    font-size: 3.2rem;
+  }
+  .navbar-brand .logo {
+    font-size: 2.3rem;
+    color: #52b6ec;
+  }
+
 }
