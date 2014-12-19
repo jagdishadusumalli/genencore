@@ -24,6 +24,7 @@ jQuery(function($) {
               name: $("#name").val(),
               phone: $("#phone").val(),
               email: $("#email").val(),
+              _replyto: $("#email").val(),
               company: $("#company").val()
       },
       dataType: "json",
