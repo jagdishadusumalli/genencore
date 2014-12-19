@@ -19,7 +19,13 @@ jQuery(function($) {
     $.ajax({
       url: "//forms.brace.io/rahul@yowoto.com",
       method: "POST",
-      data: {message: "hello!"},
+      data: {
+              message: $("#message").val(),
+              name: $("#name").val(),
+              phone: $("#phone").val(),
+              email: $("#email").val(),
+              company: $("#company").val()
+      },
       dataType: "json",
       success: function(data){ showFormNotice(); }
     });
