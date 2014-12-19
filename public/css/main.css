@@ -97,12 +97,6 @@ a:focus {
   -o-animation: scaleUp 400ms;
   -ms-animation: scaleUp 400ms;
   animation: scaleUp 400ms;
-  background: rgba(255, 255, 255, 1);
-  width: 44rem;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
 }
 #main-slider .prev,
 #main-slider .next {
@@ -135,6 +129,12 @@ a:focus {
   text-shadow: 0 3px rgba(0, 0, 0, 0.1);
   color: #52b6ec;
   font-weight: bold;
+  background: rgba(255, 255, 255, 1);
+  width: 44rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
 }
 .slide_img{
   width: auto;
@@ -907,7 +907,7 @@ textarea#message {
 .carousel-indicators{
   bottom: -10px;
 }
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navbar-header{
     width: 100%;
   }
@@ -922,5 +922,18 @@ textarea#message {
   }
   .footer_contact_wrap{
     width:100%;
+  }
+  #main-slider h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+  .navbar-default .navbar-nav > li > a{
+    padding: 14px 0;
+  }
+  .navbar-brand{
+    padding: 4px 15px;
+  }
+  .dd_nav{
+    margin-bottom: 2rem;
   }
 }

@@ -31,11 +31,6 @@ jQuery(function($) {
 		var $spy = $(this).scrollspy('refresh')
 	})
 
-	//PrettyPhoto
-	// $("a.preview").prettyPhoto({
-	// 	social_tools: false
-	// });
-
 	//Isotope
 	$(window).load(function(){
 		$portfolio = $('.portfolio-items');
@@ -52,4 +47,11 @@ jQuery(function($) {
 			return false;
 		});
 	});
+	$(".navbar-default .navbar-nav li a").click(function(){
+		$(".navbar-collapse").slideToggle();
+	});
+	$(".navbar-toggle").click(function(){
+		$(".navbar-collapse").slideToggle();
+	});
+
 });
