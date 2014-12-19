@@ -28,6 +28,7 @@ button:focus{
 }
 .btn.btn-primary {
   background-color: #52b6ec;
+  color:white!important;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary.active {
@@ -217,8 +218,10 @@ div.col-lg-6.agile_img_wrap img{
   color: #52b6ec;
 }
 #contact .box input[type="text"],
+#contact .box input[type="number"],
 #contact .box input[type="email"],
 #contact .box textarea {
+  color:white;
   background-color: #111;
   border: 0;
   -webkit-transition: 300ms;
@@ -227,6 +230,7 @@ div.col-lg-6.agile_img_wrap img{
   transition: 300ms;
 }
 #contact .box input[type="text"]:focus,
+#contact .box input[type="number"]:focus,
 #contact .box input[type="email"]:focus,
 #contact .box textarea:focus {
   background-color: #000;

@@ -12,12 +12,13 @@ jQuery(function($) {
   {
      $("#form-notice").show(); 
      $("#contactForm")[0].reset();
+			setTimeout(function(){$("#form-notice").slideToggle();},2000);
   } 
 
 	//Ajax contact
 	$('#submit-form').click(function () {
     $.ajax({
-      url: "//forms.brace.io/rahul@yowoto.com",
+      url: "//forms.brace.io/info@genencore.com",
       method: "POST",
       data: {
               message: $("#message").val(),
