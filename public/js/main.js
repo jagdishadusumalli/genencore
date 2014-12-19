@@ -7,14 +7,28 @@ jQuery(function($) {
 		});
 	});
 
+  
+  function showFormNotice()
+  {
+     $("#form-notice").show(); 
+     $("#contactForm")[0].reset();
+  } 
+
 	//Ajax contact
-	var form = $('.contact-form');
-	form.submit(function () {
-		$this = $(this);
-		$.post($(this).attr('action'), function(data) {
-			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
-		},'json');
-		return false;
+	$('#submit-form').click(function () {
+    $.ajax({
+      url: "//forms.brace.io/rahul@yowoto.com",
+      method: "POST",
+      data: {message: "hello!"},
+      dataType: "json",
+      success: function(data){ showFormNotice(); }
+    });
+
+  //  $this = $(this);
+	//	$.post($(this).attr('action'), function(data) {
+	//		$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
+	//	},'json');
+	//	return false;
 	});
 
 	//smooth scroll
