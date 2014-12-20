@@ -13,9 +13,3 @@ run lambda { |env|
     File.open('public/index.html', File::RDONLY)
   ]
 }
-use Rack::Cors do
-  allow do
-    origins '*'
-    resource '*', :headers => :any, :methods => [:get, :post, :options, :delete, :put]
-  end
-end
